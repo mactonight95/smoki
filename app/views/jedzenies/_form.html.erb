@@ -1,0 +1,37 @@
+<%= form_with(model: jedzeny, local: true) do |form| %>
+  <% if jedzeny.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(jedzeny.errors.count, "error") %> prohibited this jedzeny from being saved:</h2>
+
+      <ul>
+      <% jedzeny.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :regen_hp %>
+    <%= form.number_field :regen_hp, id: :jedzeny_regen_hp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :regen_mp %>
+    <%= form.number_field :regen_mp, id: :jedzeny_regen_mp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bonus_exp %>
+    <%= form.number_field :bonus_exp, id: :jedzeny_bonus_exp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :jedzeny_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

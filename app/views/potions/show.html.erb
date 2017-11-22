@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bonus hp:</strong>
+  <%= @potion.bonus_hp %>
+</p>
+
+<p>
+  <strong>Bonus mp:</strong>
+  <%= @potion.bonus_mp %>
+</p>
+
+<p>
+  <strong>Bonus atk:</strong>
+  <%= @potion.bonus_atk %>
+</p>
+
+<p>
+  <strong>Bonus exp:</strong>
+  <%= @potion.bonus_exp %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @potion.user %>
+</p>
+
+<%= link_to 'Edit', edit_potion_path(@potion) %> |
+<%= link_to 'Back', potions_path %>

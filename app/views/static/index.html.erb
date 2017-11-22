@@ -1,0 +1,16 @@
+<h1> Witaj na stronie glownej </h1>
+<%= Time.now %>
+<ul>
+  <% @smoks.each do |smok| %>
+  <li> <%= smok.hp %></li>
+  <% end %>
+</ul>
+<p>
+
+
+</p>
+<ul>
+  <% @users.each do |user| %>
+  <li> <%= user.login %> </li>
+  <% end %>
+</ul>

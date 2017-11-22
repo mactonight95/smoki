@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bonus_hp: 1
+  bonus_mp: 1
+  bonus_atk: 1
+  bonus_exp: 1
+  user: one
+
+two:
+  bonus_hp: 1
+  bonus_mp: 1
+  bonus_atk: 1
+  bonus_exp: 1
+  user: two

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jedzenies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regen hp</th>
+      <th>Regen mp</th>
+      <th>Bonus exp</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jedzenies.each do |jedzeny| %>
+      <tr>
+        <td><%= jedzeny.regen_hp %></td>
+        <td><%= jedzeny.regen_mp %></td>
+        <td><%= jedzeny.bonus_exp %></td>
+        <td><%= jedzeny.user %></td>
+        <td><%= link_to 'Show', jedzeny %></td>
+        <td><%= link_to 'Edit', edit_jedzeny_path(jedzeny) %></td>
+        <td><%= link_to 'Destroy', jedzeny, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jedzeny', new_jedzeny_path %>

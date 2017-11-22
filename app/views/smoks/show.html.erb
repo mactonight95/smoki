@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hp:</strong>
+  <%= @smok.hp %>
+</p>
+
+<p>
+  <strong>Mp:</strong>
+  <%= @smok.mp %>
+</p>
+
+<p>
+  <strong>Atk:</strong>
+  <%= @smok.atk %>
+</p>
+
+<p>
+  <strong>Lvl:</strong>
+  <%= @smok.lvl %>
+</p>
+
+<p>
+  <strong>Exp:</strong>
+  <%= @smok.exp %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @smok.user %>
+</p>
+
+<%= link_to 'Edit', edit_smok_path(@smok) %> |
+<%= link_to 'Back', smoks_path %>

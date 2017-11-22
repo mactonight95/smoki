@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  regen_hp: 1
+  regen_mp: 1
+  bonus_exp: 1
+  user: one
+
+two:
+  regen_hp: 1
+  regen_mp: 1
+  bonus_exp: 1
+  user: two

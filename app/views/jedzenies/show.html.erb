@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Regen hp:</strong>
+  <%= @jedzeny.regen_hp %>
+</p>
+
+<p>
+  <strong>Regen mp:</strong>
+  <%= @jedzeny.regen_mp %>
+</p>
+
+<p>
+  <strong>Bonus exp:</strong>
+  <%= @jedzeny.bonus_exp %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @jedzeny.user %>
+</p>
+
+<%= link_to 'Edit', edit_jedzeny_path(@jedzeny) %> |
+<%= link_to 'Back', jedzenies_path %>

@@ -1,0 +1,42 @@
+<%= form_with(model: potion, local: true) do |form| %>
+  <% if potion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(potion.errors.count, "error") %> prohibited this potion from being saved:</h2>
+
+      <ul>
+      <% potion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :bonus_hp %>
+    <%= form.number_field :bonus_hp, id: :potion_bonus_hp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bonus_mp %>
+    <%= form.number_field :bonus_mp, id: :potion_bonus_mp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bonus_atk %>
+    <%= form.number_field :bonus_atk, id: :potion_bonus_atk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bonus_exp %>
+    <%= form.number_field :bonus_exp, id: :potion_bonus_exp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :potion_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

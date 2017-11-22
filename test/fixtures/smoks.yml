@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hp: 1
+  mp: 1
+  atk: 1
+  lvl: 1
+  exp: 1
+  user: one
+
+two:
+  hp: 1
+  mp: 1
+  atk: 1
+  lvl: 1
+  exp: 1
+  user: two

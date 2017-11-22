@@ -1,0 +1,47 @@
+<%= form_with(model: smok, local: true) do |form| %>
+  <% if smok.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(smok.errors.count, "error") %> prohibited this smok from being saved:</h2>
+
+      <ul>
+      <% smok.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :hp %>
+    <%= form.number_field :hp, id: :smok_hp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mp %>
+    <%= form.number_field :mp, id: :smok_mp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atk %>
+    <%= form.number_field :atk, id: :smok_atk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lvl %>
+    <%= form.number_field :lvl, id: :smok_lvl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exp %>
+    <%= form.number_field :exp, id: :smok_exp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :smok_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

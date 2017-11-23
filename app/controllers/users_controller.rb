@@ -1,8 +1,13 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  swagger_controller :users, 'Users'
 
   # GET /users
   # GET /users.json
+  swagger_api :index do
+    summary 'Zwraca wszystkich userow'
+    notes '...'
+  end
   def index
     @users = User.all
   end
